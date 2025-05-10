@@ -40,7 +40,7 @@ class Login_Input (UserCreationForm):
   password1 = forms.CharField (max_length=40, label='', widget = forms.PasswordInput(attrs={
      
      'class' : 'control poppins-thin',
-     'placeholder' : 'Enter Password1',
+     'placeholder' : 'Password',
      'autocomplete': 'off'
 
   }))
@@ -48,7 +48,7 @@ class Login_Input (UserCreationForm):
   password2 = forms.CharField (max_length=40, label='', widget = forms.PasswordInput(attrs={
 
     'class' : 'control poppins-thin',
-    'placeholder' : 'Enter Password1',
+    'placeholder' : 'Password Confirm',
     'autocomplete': 'off'
 
   }))

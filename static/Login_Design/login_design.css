@@ -24,3 +24,12 @@
   outline: none;
   padding-left: 15px;
 }
+
+.Form_Btn {
+  background-color: #EA454C;
+  border: none;
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  border-radius: 12px;
+}
