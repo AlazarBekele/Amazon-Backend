@@ -9,8 +9,18 @@
 
 .Form_container {
   display: grid;
-  grid-template-columns: 300px 300px;
-  justify-content: space-evenly;
+  grid-template-columns: 320px 320px;
+  justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 100%;
+  column-gap: 20px;
+}
+
+.control {
+  border: 1px solid #C4C4C4;
+  border-radius: 12px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
 }
