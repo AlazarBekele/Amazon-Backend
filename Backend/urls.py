@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (
     index,
     sell_index,
-    login_here
+    login_here,
 )
 
 from django.conf import settings
@@ -12,7 +12,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path ('', index, name='index'),
     path ('sell/', sell_index, name='sell'),
-    path ('login/', login_here, name='login')
+    path ('login/', login_here, name='login'),
 ]
 
 if settings.DEBUG:
