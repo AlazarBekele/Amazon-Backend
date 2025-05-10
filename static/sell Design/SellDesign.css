@@ -75,18 +75,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.sell-content {
+.sell_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-right: 10px;
+    height: 40px;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.sell-content h2,
-.sell-content p,
-.sell-content button {
+.sell_content h2,
+.sell_content p,
+.sell_content button {
     margin: 0;
 }
 
