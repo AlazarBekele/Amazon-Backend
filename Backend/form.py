@@ -5,48 +5,49 @@ from django.contrib.auth.models import User
 
 class Login_Input (UserCreationForm):
 
-  First_name = forms.CharField (max_length=20, widget = forms.TextInput(attrs={
+  First_name = forms.CharField (max_length=20, label='' ,widget = forms.TextInput(attrs={
 
-    'class' : 'form-control',
+    'class' : 'control poppins-thin',
     'placeholder' : 'First Name',
     'autocomplete' : 'off'
 
   }))
 
-  Last_name = forms.CharField (max_length=20, widget = forms.TextInput(attrs={
+  Last_name = forms.CharField (max_length=20, label='', widget = forms.TextInput(attrs={
 
-    'class' : 'form-control',
+    'class' : 'control poppins-thin',
     'placeholder' : 'Last Name',
     'autocomplete' : 'off'
 
   }))
 
-  username = forms.CharField (widget = forms.TextInput(attrs={
+  username = forms.CharField (label='',widget = forms.TextInput(attrs={
 
-    'class' : 'form-control',
+    'class' : 'control poppins-thin',
     'placeholder' : 'User Name',
     'autocomplete' : 'off'
 
   }))
 
-  Email = forms.EmailField (widget = forms.EmailInput(attrs={
+  Email = forms.EmailField (label='', widget = forms.EmailInput(attrs={
 
-    'class' : 'form-control',
+    'class' : 'control poppins-thin',
     'placeholder' : 'Enter Your Email',
     'autocomplete' : 'off'
 
   }))
 
-  password1 = forms.CharField (max_length=40, widget = forms.PasswordInput(attrs={
+  password1 = forms.CharField (max_length=40, label='', widget = forms.PasswordInput(attrs={
      
-     'class' : 'form-control parkinsans',
+     'class' : 'control poppins-thin',
      'placeholder' : 'Enter Password1',
      'autocomplete': 'off'
+
   }))
       
-  password2 = forms.CharField (max_length=40, widget = forms.PasswordInput(attrs={
+  password2 = forms.CharField (max_length=40, label='', widget = forms.PasswordInput(attrs={
 
-    'class' : 'form-control parkinsans',
+    'class' : 'control poppins-thin',
     'placeholder' : 'Enter Password1',
     'autocomplete': 'off'
 

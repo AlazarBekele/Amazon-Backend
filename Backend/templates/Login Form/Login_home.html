@@ -10,7 +10,13 @@
   <title>Amazon Login</title>
 
   <!-- Css Link -->
-   <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{% static 'Login_Design/login_design.css' %}">
+    <link rel="stylesheet" href="{% static 'Font/Font.css' %}">
+
+    {% comment %} Font css {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,7 +26,7 @@
 
         <div class="Main_login">
 
-            <form method="post">
+            <form class="Form_container" method="post">
 
                 {% csrf_token %}
                 {{ Login_Input.as_p }}
