@@ -1,12 +1,16 @@
 from django.urls import path
-from .views import index
+from .views import (
+    index,
+    sell_index
+)
 
 from django.conf import settings
 from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path ('', index, name='index')
+    path ('', index, name='index'),
+    path ('sell/', sell_index, name='sell')
 ]
 
 if settings.DEBUG:
