@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.main-nav {
+    background: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.main_logo img {
+    width: 120px;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.search-type input {
+    display: flex;
+    margin-left: 113px;
+    align-items: center;
+    padding-left: 5px;
+    height: 35px;
+    width: 235%;
+    border-radius: 3px;
+    border-color: transparent;
+    outline: none;
+}
+
+.button-input button {
+    background: orange;
+    display: flex;
+    margin-left: 916%;
+    margin-top: 7px;
+    outline: none;
+    margin-bottom: 9%;
+    height: 36px;
+    width: 50px;
+    padding-left: 11px;
+    padding-top: 5px;
+    box-shadow: none;
+    border-bottom: transparent;
+    border-color: transparent;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.sec {
+    display: flex;
+    background-color: #192A48;
+    padding: 10px 20px;
+}
+
+.sec a {
+    color: #fff;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sell {
+    padding: 40px 20px;
+    background-color: #f6f6f68e;
+    color: #111;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sell-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.sell-content h2,
+.sell-content p,
+.sell-content button {
+    margin: 0;
+}
+
+.sell h2 {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sell p {
+    
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sell a {
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 500;
+}
+
+.sell a:hover {
+    text-decoration: underline;
+    transform: translate(-3px);
+}
+
+.sell button {
+    background: rgb(255, 102, 0);
+    border: none;
+    border-radius: 50px;
+    color: #111;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 8%;  
+    max-width: 200px;
+    height: 45px;
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+.sell button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.amazon-seller {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 55px;
+    margin-top: 90px;
+    max-height: 250px;
+}
+
+.amazon-seller img {
+    width: 500px; 
+    height: auto;
+    border-radius: 8px;
+}     
+.main-signup {
+    display: flex;
+    padding-left: 55px;
+}   
+
+.main-signup p {
+    padding-top: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.main-signup p:hover {
+    transform: translateY(-3px);
+}
+.main-signup button {
+    font-size: 20px;
+    width: 188px;
+    height: 75px;
+}  
+.amazon-incentives {
+    padding: 70px 100px;
+    font-size: 30px;
+    
+}     
+
+.new-incentives button {
+    background: rgb(0, 99, 0);
+    color: #fff;
+    margin-left: 500px;
+    margin-top: 120px;
+    width: 190px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    
+}
+.started {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+}
+.started img {
+    width: 500px;
+    height: auto;
+    padding-right: 40px;
+}
+.started h4 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.paragraph {
+    font-size: 15px;
+    padding-top: 5px;
+    color: #111;
+    line-height: 1.5;
+    max-width: 600px;
+    gap: 10px;
+}
+.defn-sell {
+    background: #f1efe3f3;
+    max-width: 700%;
+    height: 300px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+.defn-sell p {
+    padding: 10px;
+}
+.all-incentives {
+    padding-top: 20px;
+}
+.all-incentives a {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+.main-create {
+    background-color: #f6f6f68e;
+    display: flex;
+    height: 810px;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+.one-seller {
+    padding: 65px 50px;
+}
+.one-seller h3 {
+    font-size: 70px;
+}
+.two-seller {
+    background: #fff;
+    width: 100%;
+    height: 360px;
+    margin: 40px 25px;
+    padding: 35px 50px;
+    padding-right: 10%;
+    border-radius: 17px;
+}
+.two-seller img {
+    width: 150px;
+    height: auto;
+}
+.two-account {
+    padding-top: 28px;
+}
+.two-account h6 {
+    font-size: 20px;
+}
+.Chief-Executive-Officer {
+    display: flex;
+    padding: 20px 4px;
+}
+.Chief-Executive-Officer h6{
+    padding: 8px 15px;
+    font-size: 17px;
+}
+.Founder h5{
+    padding: 0px 17px;
+    font-size: 12px;
+}
+.Chief-Executive-Officer img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+.Founder-link {
+    padding-top: 10px;
+}
+.Founder-link a {
+    font-size: 17px;
+    color: #111;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+}
+.Founder-link a:hover {
+    transform: translateY(-3px);
+    text-decoration: underline;
+}
+.there-acount {
+    background: #fff;
+    width: 100%;
+    height: 360px;
+    margin: 40px 25px;         
+    padding: 35px 50px;
+    padding-right: 10%;
+    border-radius: 17px;
+    box-sizing: border-box;    
+  }
+  
+
+.there-acount img {
+    width: 150px;
+    height: auto;
+}
+
+.there-acount .two-account {
+    padding-top: 28px;
+}
+
+.there-acount .two-account h6 {
+    font-size: 20px;
+}
+
+.there-acount .Chief-Executive-Officer {
+    display: flex;
+    padding: 20px 4px;
+}
+
+.there-acount .Chief-Executive-Officer h6 {
+    padding: 8px 15px;
+    font-size: 17px;
+}
+
+.there-acount .Founder h5 {
+    padding: 0px 17px;
+    font-size: 12px;
+}
+
+.there-acount .Chief-Executive-Officer img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.there-acount .Founder-link {
+    padding-top: 10px;
+}
+
+.there-acount .Founder-link a {
+    font-size: 17px;
+    color: #111;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.there-acount .Founder-link a:hover {
+    transform: translateY(-3px);
+    text-decoration: underline;
+}
