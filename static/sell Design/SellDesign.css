@@ -137,16 +137,20 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.amazon-seller {
+.Hero_banner_sell {
     display: flex;
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 55px;
-    margin-top: 90px;
-    height: 60vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.amazon-seller img {
+.amazon_seller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.amazon_seller img {
     width: 500px; 
     height: auto;
     border-radius: 8px;
