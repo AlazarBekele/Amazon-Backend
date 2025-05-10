@@ -123,13 +123,37 @@
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    width: 8%;  
-    max-width: 200px;
+    width: 150px;
     height: 45px;
     outline: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 50px;
+}
+
+#signup-btn-bottom {
+    background: rgb(255, 102, 0);
+    border: none;
+    border-radius: 50px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+#signup-btn-bottom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sell button:hover {
@@ -168,7 +192,7 @@
 .main-signup p:hover {
     transform: translateY(-3px);
 }
-.main-signup button {
+.main-signup a {
     font-size: 20px;
     width: 188px;
     height: 75px;
