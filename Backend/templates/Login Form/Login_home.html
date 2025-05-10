@@ -22,7 +22,8 @@
 
             <form method="post">
 
-                
+                {% csrf_token %}
+                {{ Login_Input.as_p }}
 
             </form>
 

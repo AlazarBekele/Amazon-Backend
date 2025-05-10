@@ -32,7 +32,8 @@ def login_here (request):
       return redirect ('index')
 
   context = {
-    'IMG_cont' : img_container
+    'IMG_cont' : img_container,
+    'Login_Input' : Login_Input
   }
 
   return render (request, 'Login Form/Login_home.html', context=context)
