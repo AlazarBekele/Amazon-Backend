@@ -64,7 +64,6 @@ class Sign_in (forms.Form):
 
     'class' : 'control_sign poppins-thin',
     'placeholder' : 'User Name',
-    'lable' : ''
 
   }))
 

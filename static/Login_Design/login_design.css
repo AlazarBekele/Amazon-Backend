@@ -37,3 +37,21 @@ body {
   font-size: 14px;
   border-radius: 12px;
 }
+
+.Form_container_sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.control_sign {
+  border: 1px solid #C4C4C4;
+  border-radius: 12px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+}

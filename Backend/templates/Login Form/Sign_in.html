@@ -28,7 +28,8 @@
         <form class="Form_container_sign" method="post">
 
           {% csrf_token %}
-          {{ sign.as_p }}
+          {{ sign.username }}
+          {{ sign.password }}
 
         </form>
 
