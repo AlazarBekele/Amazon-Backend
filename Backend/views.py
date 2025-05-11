@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Login_IMG
+from .models import Login_IMG, Shopping_Object
 from .form import Login_Input, Sign_in
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
@@ -69,5 +69,11 @@ def SignForm (request):
   return render (request, 'Login Form/Sign_in.html', context=context)
 
 def card_one (request):
+
+  Object_data = Shopping_Object.objects.all()
+
+  context = {
+    'Object_data' : Object_data
+  }
 
   return render (request, 'Page/Card One/Gaming accessories.html')
