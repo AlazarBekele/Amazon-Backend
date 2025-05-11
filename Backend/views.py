@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Login_IMG
-from .form import Login_Input
+from .form import Login_Input, Sign_in
+from django.contrib.auth import aauthenticate, login
 
 
 # Create your views here.
@@ -38,7 +39,16 @@ def login_here (request):
 
   return render (request, 'Login Form/Login_home.html', context=context)
 
-def Sign_in (request):
+def SignForm (request):
+
+  sign = Sign_in (request.POST)
+
+  if request.method == 'POST':
+
+    if sign.is_valid():
+
+      username = sign.cleaned_data ['username']
+      password = sign.cleaned_data ['password']
 
   return render (request, 'Login Form/Sign_in.html')
 

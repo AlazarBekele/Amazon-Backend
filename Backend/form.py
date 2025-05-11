@@ -64,7 +64,6 @@ class Sign_in (forms.Form):
 
     'class' : 'control poppins-thin',
     'placeholder' : 'User Name',
-    'autocomplete' : 'off'
 
   }))
 
@@ -72,6 +71,5 @@ class Sign_in (forms.Form):
 
     'class' : 'control poppins-thin',
     'placeholder' : 'Password',
-    'autocomplete' : 'off'
 
   }))
