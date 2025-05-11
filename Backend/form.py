@@ -56,3 +56,13 @@ class Login_Input (UserCreationForm):
   class Meta:
     model = User
     fields = ['First_name', 'Last_name', 'username', 'Email', 'password1', 'password2']
+
+
+class Sign_in (forms.Form):
+
+  username = forms.CharField(widget=forms.TextInput(attrs={
+
+    'class' : 'control poppins-thin'
+
+  }))
+  password = forms.CharField(widget=forms.PasswordInput)
