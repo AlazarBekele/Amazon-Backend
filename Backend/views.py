@@ -60,6 +60,7 @@ def SignForm (request):
 
         login (request, user)
         return redirect ('index')
+      
 
   context = {
     'sign' : sign
