@@ -60,9 +60,18 @@ class Login_Input (UserCreationForm):
 
 class Sign_in (forms.Form):
 
-  username = forms.CharField(widget=forms.TextInput(attrs={
+  username = forms.CharField (widget = forms.TextInput(attrs={
 
     'class' : 'control poppins-thin'
+    'placeholder' : 'Password Confirm',
+
 
   }))
-  password = forms.CharField(widget=forms.PasswordInput)
+
+  password = forms.CharField(widget=forms.TextInput(attrs={
+
+    'class' : 'control poppins-thin'
+    'placeholder' : 'Password Confirm',
+    'autocomplete': 'off'
+
+  }))
