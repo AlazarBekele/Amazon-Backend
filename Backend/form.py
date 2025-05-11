@@ -67,3 +67,11 @@ class Sign_in (forms.Form):
     'autocomplete' : 'off'
 
   }))
+
+  password = forms.CharField (widget = forms.TextInput(attrs={
+
+    'class' : 'control poppins-thin',
+    'placeholder' : 'Password',
+    'autocomplete' : 'off'
+
+  }))
