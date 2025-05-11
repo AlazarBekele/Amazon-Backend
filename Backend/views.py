@@ -71,6 +71,7 @@ def SignForm (request):
 def card_one (request):
 
   Object_data = Shopping_Object.objects.all()
+  
 
   context = {
     'Object_data' : Object_data
