@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect
 from .models import Login_IMG
 from .form import Login_Input, Sign_in
 from django.contrib.auth import aauthenticate, login
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
 
+@login_required (login_url='/login/')
 def index (request):
 
   img_container = Login_IMG.objects.all()
