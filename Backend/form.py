@@ -67,7 +67,7 @@ class Sign_in (forms.Form):
 
   }))
 
-  password = forms.CharField (label='', required=False, widget = forms.TextInput(attrs={
+  password = forms.CharField (label='', required=False, widget = forms.PasswordInput(attrs={
 
     'class' : 'control_sign poppins-thin',
     'placeholder' : '********',
