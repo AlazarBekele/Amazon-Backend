@@ -18,8 +18,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
+
+  <div class="All_container_login">
+
+    <div class="Main_login">
+
+        <form class="Form_container" method="post">
+
+            <h2 class="poppins-regular">Welcome <span class="poppins-thin">To Amazon</span></h2>
+
+            {% csrf_token %}
+            
+
+            <button type="submit" class="Form_Btn poppins-regular">Sign in</button>
+
+        </form>
+
+    </div>
+
+</div>
   
 </body>
 </html>
