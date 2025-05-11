@@ -9,3 +9,14 @@ class Login_IMG (models.Model):
 
   def __str__(self):
     return self.title
+  
+
+class Shopping_Object (models.Model):
+
+  Obj_name = models.CharField (max_length=200)
+  Obj_rate = models.IntegerField ()
+  Obj_quantity = models.IntegerField ()
+  Obj_price = models.IntegerField ()
+
+  def __str__(self):
+    return self.Obj_name
