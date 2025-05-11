@@ -50,7 +50,23 @@ def SignForm (request):
       username = sign.cleaned_data ['username']
       password = sign.cleaned_data ['password']
 
-  return render (request, 'Login Form/Sign_in.html')
+      user = aauthenticate(request, username=username, password=password)
+
+      if user is not None:
+
+        login (request, user)
+        return redirect ('index')
+      
+      else:
+        
+        sign.add_error(None, 'Login Error!!')
+
+
+  context = {
+    'sign' : sign
+  }
+
+  return render (request, 'Login Form/Sign_in.html', context=context)
 
 # def card_one (request):
 
