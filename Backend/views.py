@@ -38,6 +38,10 @@ def login_here (request):
 
   return render (request, 'Login Form/Login_home.html', context=context)
 
+def Sign_in (request):
+
+  return render (request, 'Login Form/Sign_in.html')
+
 # def card_one (request):
 
 #   return render (request, 'Page/Card One/Gaming accessories.html')
