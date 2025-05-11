@@ -68,6 +68,6 @@ def SignForm (request):
 
   return render (request, 'Login Form/Sign_in.html', context=context)
 
-# def card_one (request):
+def card_one (request):
 
-#   return render (request, 'Page/Card One/Gaming accessories.html')
+  return render (request, 'Page/Card One/Gaming accessories.html')
