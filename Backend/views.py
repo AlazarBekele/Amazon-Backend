@@ -26,14 +26,14 @@ def login_here (request):
 
 
   if request.method == 'POST':
-    if Login_Input.is_valid():
+    if Login_form.is_valid():
 
-      Login_Input.save()
+      Login_form.save()
       return redirect ('index')
 
   context = {
     'IMG_cont' : img_container,
-    'Login_Input' : Login_Input
+    'Login_Input' : Login_form
   }
 
   return render (request, 'Login Form/Login_home.html', context=context)
