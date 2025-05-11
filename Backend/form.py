@@ -62,7 +62,7 @@ class Sign_in (forms.Form):
 
   username = forms.CharField (label='', required=False, widget = forms.TextInput(attrs={
 
-    'class' : 'control poppins-thin',
+    'class' : 'control_sign poppins-thin',
     'placeholder' : 'User Name',
     'lable' : ''
 
@@ -70,7 +70,7 @@ class Sign_in (forms.Form):
 
   password = forms.CharField (label='', required=False, widget = forms.TextInput(attrs={
 
-    'class' : 'control poppins-thin',
-    'placeholder' : 'Password',
+    'class' : 'control_sign poppins-thin',
+    'placeholder' : '********',
 
   }))
