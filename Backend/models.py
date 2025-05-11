@@ -11,9 +11,11 @@ class Login_IMG (models.Model):
     return self.title
   
 
+
 class Shopping_Object (models.Model):
 
   Obj_name = models.CharField (max_length=200)
+  Obj_Image = models.ImageField (upload_to='shop/', null=True, blank=True)
   Obj_rate = models.IntegerField ()
   Obj_quantity = models.IntegerField ()
   Obj_price = models.IntegerField ()

@@ -694,85 +694,89 @@
 
                 <div class="Object_container">
 
-                    <div class="All_object_container">
+                    {% for Object_datas in Object_data %}
 
-                        <div class="Object_IMAG_contaienr">
+                        <div class="All_object_container">
 
-                            <img style="width: 230px; height: auto;" src="{% static 'IMG/Headset IMG/h1.jpg' %}" alt="">
+                            <div class="Object_IMAG_contaienr">
 
-                        </div>
+                                <img style="width: 230px; height: auto;" src="{{  }}" alt="">
 
-                        <div>
+                            </div>
 
                             <div>
 
-                                <div class="Main_title_container">
+                                <div>
 
-                                    <h5 style="font-size: 18px;" class="Black_font">CORSAIR VOID RGB ELITE Wireless Gaming Headset – 7.1 Surround Sound – Omni-Directional Microphone – Microfiber Mesh Earpads – Up to 40ft Range – iCUE Compatible – PC, Mac, PS5, PS4 – Carbon</h5>
+                                    <div class="Main_title_container">
 
-                                </div>
-
-                                <div class="Rate_container gap-3">
-
-                                    <div>
-    
-                                        <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
-                                        <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
-                                        <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
-                                        <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
-                                        <img class="Main_star" src="https://img.icons8.com/?size=100&id=104&format=png&color=000000" alt="">
-                
-                                    </div>
-
-                                    <div class="Object_Rate">
-
-                                        <p class="m-0 Black_font" style="color: rgb(4, 131, 157);">23,000</p>
+                                        <h5 style="font-size: 18px;" class="Black_font">CORSAIR VOID RGB ELITE Wireless Gaming Headset – 7.1 Surround Sound – Omni-Directional Microphone – Microfiber Mesh Earpads – Up to 40ft Range – iCUE Compatible – PC, Mac, PS5, PS4 – Carbon</h5>
 
                                     </div>
 
-                                </div>
+                                    <div class="Rate_container gap-3">
 
-                                <div>
+                                        <div>
+        
+                                            <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
+                                            <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
+                                            <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
+                                            <img class="Main_star" src="https://img.icons8.com/?size=100&id=7856&format=png&color=000000" alt="">
+                                            <img class="Main_star" src="https://img.icons8.com/?size=100&id=104&format=png&color=000000" alt="">
+                    
+                                        </div>
 
-                                    <p style="font-size: 13px;">3K+ bought in past month</p>
+                                        <div class="Object_Rate">
 
-                                </div>
+                                            <p class="m-0 Black_font" style="color: rgb(4, 131, 157);">23,000</p>
 
-                                <div>
-
-                                    <button class="Object_btn">See options</button>
-
-                                </div>
-
-                                <div>
-
-                                    <div>
-
-                                        <p class="m-0" style="font-size: 13px;">No featured offers available</p>
+                                        </div>
 
                                     </div>
 
                                     <div>
 
-                                        <p class="Black_font">$46.21 <span style="color: rgb(4, 131, 157);">(4 used & new offers)</span></p>
+                                        <p style="font-size: 13px;">3K+ bought in past month</p>
 
-                                        <div class="All_color_container">
+                                    </div>
 
-                                            <div class="color_container">
+                                    <div>
 
-                                                <p class="color_Selection m-0"></p>
+                                        <button class="Object_btn">See options</button>
 
-                                            </div>
+                                    </div>
 
-                                            <div class="color_container">
+                                    <div>
 
-                                                <p class="color_Selection m-0"></p>
+                                        <div>
 
-                                            </div>
+                                            <p class="m-0" style="font-size: 13px;">No featured offers available</p>
 
-                                            <div class="color_container">
+                                        </div>
 
-                                                <p class="color_Selection m-0"></p>
+                                        <div>
+
+                                            <p class="Black_font">$46.21 <span style="color: rgb(4, 131, 157);">(4 used & new offers)</span></p>
+
+                                            <div class="All_color_container">
+
+                                                <div class="color_container">
+
+                                                    <p class="color_Selection m-0"></p>
+
+                                                </div>
+
+                                                <div class="color_container">
+
+                                                    <p class="color_Selection m-0"></p>
+
+                                                </div>
+
+                                                <div class="color_container">
+
+                                                    <p class="color_Selection m-0"></p>
+
+                                                </div>
 
                                             </div>
 
@@ -786,7 +790,7 @@
 
                         </div>
 
-                    </div>
+                    {% endfor %}
 
                 </div>
     
