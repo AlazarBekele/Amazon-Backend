@@ -62,14 +62,14 @@ class Sign_in (forms.Form):
 
   username = forms.CharField (label='', required=False, widget = forms.TextInput(attrs={
 
-    'class' : 'control_sign poppins-thin shadow-sm',
+    'class' : 'control_sign poppins-thin',
     'placeholder' : 'User Name',
 
   }))
 
   password = forms.CharField (label='', required=False, widget = forms.TextInput(attrs={
 
-    'class' : 'control_sign poppins-thin shadow-sm',
+    'class' : 'control_sign poppins-thin',
     'placeholder' : '********',
 
   }))
