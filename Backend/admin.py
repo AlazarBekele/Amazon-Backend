@@ -11,3 +11,4 @@ from .models import (
 
 admin.site.register (Login_IMG)
 admin.site.register (Shopping_Object)
+admin.site.register (Category)
