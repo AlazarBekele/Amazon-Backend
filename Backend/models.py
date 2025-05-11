@@ -24,6 +24,7 @@ class Shopping_Object (models.Model):
   Obj_rate = models.IntegerField ()
   Obj_quantity = models.IntegerField ()
   Obj_price = models.IntegerField ()
+  Obj_Category = models.ForeignKey (Category, on_delete=models.SET_NULL, null=True, blank=True)
 
   def __str__(self):
     return self.Obj_name
