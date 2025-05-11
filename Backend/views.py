@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-@login_required (login_url='/SignIn/')
+@login_required (login_url='SignIn/')
 def index (request):
 
   img_container = Login_IMG.objects.all()
@@ -18,7 +18,7 @@ def index (request):
 
   return render (request, 'index.html', context=context)
 
-@login_required (login_url='/SignIn/')
+@login_required (login_url='SignIn/')
 def sell_index (request):
 
   return render (request, 'Sell Part/Sell.html')
