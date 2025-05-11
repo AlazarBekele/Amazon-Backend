@@ -76,4 +76,4 @@ def card_one (request):
     'Object_data' : Object_data
   }
 
-  return render (request, 'Page/Card One/Gaming accessories.html')
+  return render (request, 'Page/Card One/Gaming accessories.html', context=context)
