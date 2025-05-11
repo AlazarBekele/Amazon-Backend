@@ -10,7 +10,12 @@ class Login_IMG (models.Model):
   def __str__(self):
     return self.title
   
+class Category (models.Model):
 
+  Type = models.CharField (max_length=30)
+
+  def __str__(self):
+    return self.Type
 
 class Shopping_Object (models.Model):
 
