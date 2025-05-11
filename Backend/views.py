@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Login_IMG
 from .form import Login_Input, Sign_in
-from django.contrib.auth import aauthenticate, login
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 
 
@@ -54,17 +54,12 @@ def SignForm (request):
       username = sign.cleaned_data ['username']
       password = sign.cleaned_data ['password']
 
-      user = aauthenticate(request, username=username, password=password)
+      user = authenticate(request, username=username, password=password)
 
       if user is not None:
 
         login (request, user)
         return redirect ('index')
-      
-      else:
-        
-        sign.add_error(None, 'Login Error!!')
-
 
   context = {
     'sign' : sign
