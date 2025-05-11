@@ -27,6 +27,9 @@
 
         <form class="Form_container" method="post">
 
+          {% csrf_token %}
+          {{ sign.as_p }}
+
         </form>
 
     </div>

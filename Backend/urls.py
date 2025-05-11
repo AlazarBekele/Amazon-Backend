@@ -3,6 +3,7 @@ from .views import (
     index,
     sell_index,
     login_here,
+    SignForm
 )
 
 from django.conf import settings
@@ -13,6 +14,7 @@ urlpatterns = [
     path ('', index, name='index'),
     path ('sell/', sell_index, name='sell'),
     path ('login/', login_here, name='login'),
+    path ('signin/', SignForm, name='SignIn')
 ]
 
 if settings.DEBUG:

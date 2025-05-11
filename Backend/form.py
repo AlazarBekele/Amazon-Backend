@@ -60,14 +60,15 @@ class Login_Input (UserCreationForm):
 
 class Sign_in (forms.Form):
 
-  username = forms.CharField (widget = forms.TextInput(attrs={
+  username = forms.CharField (label='' ,widget = forms.TextInput(attrs={
 
     'class' : 'control poppins-thin',
     'placeholder' : 'User Name',
+    'lable' : ''
 
   }))
 
-  password = forms.CharField (widget = forms.TextInput(attrs={
+  password = forms.CharField (label='' ,widget = forms.TextInput(attrs={
 
     'class' : 'control poppins-thin',
     'placeholder' : 'Password',
