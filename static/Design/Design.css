@@ -630,6 +630,7 @@
     border: 1px solid rgb(231, 231, 231);
     gap: 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .Rate_container {
