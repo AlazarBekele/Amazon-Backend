@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Login_IMG (models.Model):
@@ -28,3 +28,12 @@ class Shopping_Object (models.Model):
 
   def __str__(self):
     return self.Obj_name
+  
+
+class Profile_picture (models.Model):
+
+  user = models.OneToOneField (User, on_delete=models.CASCADE)
+  Profile_IMG = models.ImageField (upload_to='Profile/', default='default.jpg')
+
+  def __str__(self):
+    return self.user.username

@@ -18,7 +18,7 @@ urlpatterns = [
     path ('login/', login_here, name='login'),
     path ('signin/', SignForm, name='SignIn'),
     path ('gaming_accessories/', card_one, name='gaming_accessories'),
-    path ('Seller/', Seller_account, name='seller')
+    path ('Seller/<int:id>/', Seller_account, name='seller')
 ]
 
 if settings.DEBUG:

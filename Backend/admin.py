@@ -3,7 +3,8 @@ from .models import (
 
   Category,
   Login_IMG,
-  Shopping_Object
+  Shopping_Object,
+  Profile_picture
 
 )
 
@@ -12,3 +13,4 @@ from .models import (
 admin.site.register (Login_IMG)
 admin.site.register (Shopping_Object)
 admin.site.register (Category)
+admin.site.register (Profile_picture)

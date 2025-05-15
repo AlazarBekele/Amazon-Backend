@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_list_or_404
 from .models import Login_IMG, Shopping_Object
 from .form import Login_Input, Sign_in
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
 
 # Create your views here.
@@ -79,6 +80,18 @@ def card_one (request):
 
   return render (request, 'Page/Card One/Gaming accessories.html', context=context)
 
-def Seller_account (request):
+def Seller_account (request, id):
+
+  current_user = request.user
+  get_id = current_user.id
+  user = get_list_or_404 (User, id=id)
+
+  # if get_id == request.id:
+
+  #   print ('Yes')
+
+  context = {
+    'user' : user
+  }
 
   return render (request, 'Sell Part/Account/Seller_account.html')
