@@ -42,3 +42,10 @@
   height: 70vh;
   background-color: white;
 }
+
+.Discritpion_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
