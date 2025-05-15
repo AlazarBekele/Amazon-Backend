@@ -5,3 +5,5 @@ Create shopping account form
 
 Change See option Btn Into Add to cart Btn
 Add Star Counter between Star
+
+Add Profile
