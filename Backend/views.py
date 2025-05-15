@@ -84,9 +84,11 @@ def Seller_account (request, id):
 
   current_user = request.user
   user = get_list_or_404 (User, id=id)
+  user_profile = Profile_picture.objects.order_by('-id').first()
 
   context = {
-    'user' : user
+    'user' : user,
+    'IMG' : user_profile
   }
 
   return render (request, 'Sell Part/Account/Seller_account.html', context=context)
