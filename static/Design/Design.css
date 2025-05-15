@@ -758,3 +758,9 @@
     width: 30px;
     padding-left: 10px;
 }
+
+.main_rate_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
