@@ -84,7 +84,7 @@ def Seller_account (request, id):
 
   current_user = request.user
   user = get_list_or_404 (User, id=id)
-  user_profile = Profile_picture.objects.order_by('-id').first()
+  user_profile = Profile_picture.objects.all()
 
   context = {
     'user' : user,
