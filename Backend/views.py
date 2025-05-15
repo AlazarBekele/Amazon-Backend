@@ -78,3 +78,7 @@ def card_one (request):
   }
 
   return render (request, 'Page/Card One/Gaming accessories.html', context=context)
+
+def Seller_account (request):
+
+  return render (request, 'Sell Part/Account/Seller_account.html')

@@ -4,7 +4,8 @@ from .views import (
     sell_index,
     login_here,
     SignForm,
-    card_one
+    card_one,
+    Seller_account
 )
 
 from django.conf import settings
@@ -16,7 +17,8 @@ urlpatterns = [
     path ('sell/', sell_index, name='sell'),
     path ('login/', login_here, name='login'),
     path ('signin/', SignForm, name='SignIn'),
-    path ('gaming_accessories/', card_one, name='gaming_accessories')
+    path ('gaming_accessories/', card_one, name='gaming_accessories'),
+    path ('Seller/', Seller_account, name='seller')
 ]
 
 if settings.DEBUG:
