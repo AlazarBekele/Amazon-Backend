@@ -22,10 +22,16 @@
 
 .Step_icon {
   width: 120px;
+  transition: 0.3s ease-in-out;
+}
+
+.Step_icon:hover {
+  transform: scale(1.1);
 }
 
 .Step_icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
