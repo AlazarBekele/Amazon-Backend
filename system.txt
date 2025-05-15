@@ -1,2 +1,3 @@
 Create upload page for shopping
 Create shopping account form
+Change See option Btn Into Add to cart Btn
