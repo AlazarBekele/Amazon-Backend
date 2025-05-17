@@ -132,6 +132,22 @@
 
 .Popup {
   display: block;
+  animation-name: Slide_animations;
+  animation-duration: 0.5s;
+}
+
+@keyframes Slide_animations {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
 }
 
 .Second_Category {
