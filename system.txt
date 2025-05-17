@@ -7,3 +7,5 @@ Change See option Btn Into Add to cart Btn
 Add Star Counter between Star
 
 Add Profile
+
+When you click step Btn create class & display block
