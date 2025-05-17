@@ -108,6 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .Second_price_container {
@@ -122,4 +123,12 @@
   border-radius: 5px;
   color: black;
   outline: none;
+}
+
+.First_container {
+  width: 70%;
+}
+
+.Second_container {
+  width: 30%;
 }
