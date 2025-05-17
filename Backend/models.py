@@ -39,3 +39,15 @@ class Profile_picture (models.Model):
   def __str__(self):
     return self.user.username
   
+
+class Sell_object_container (models.Model):
+
+  Sell_Object_name = models.CharField (max_length=200)
+  Sell_Object_Image = models.ImageField (upload_to='Sell_Object/', null=True, blank=True)
+  Sell_Object_rate = models.IntegerField ()
+  Sell_Object_quantity = models.IntegerField ()
+  Sell_Object_price = models.IntegerField ()
+  Sell_Object_Category = models.ForeignKey (Category, on_delete=models.SET_NULL, null=True, blank=True)
+
+  def __str__(self):
+    return self.Sell_Object_name

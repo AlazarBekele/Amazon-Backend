@@ -174,12 +174,16 @@
 
                     <div>
 
-                        {% for Forms in Form %}
+                        <form method="post">
 
-                            {% csrf_token %}
-                            {{ Forms.as_p }}
+                            {% for Forms in Form %}
 
-                        {% endfor %}
+                                {% csrf_token %}
+                                {{ Forms.as_p }}
+
+                            {% endfor %}
+
+                        </form>
 
                     </div>
 
