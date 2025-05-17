@@ -57,7 +57,7 @@
 
 .Discritpion_input_title {
   border: none;
-  background-color: #E5E5E5;
+  background-color: #f6f6f6;
   width: 800px;
   height: 50px;
   border-radius: 5px;
@@ -72,10 +72,14 @@
 
 .Discritpion_input_text {
   border: none;
-  background-color: #E5E5E5;
+  background-color: #f6f6f6;
   width: 800px;
   height: 320px;
   border-radius: 5px;
   color: black;
   outline: none;
+}
+
+.Next_icon {
+  width: 40px;
 }
