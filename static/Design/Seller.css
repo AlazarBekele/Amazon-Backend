@@ -83,3 +83,11 @@
 .Next_icon {
   width: 20px;
 }
+
+.Next_Btn {
+  border: none;
+  outline: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  color: rgb(146, 146, 146);
+}
