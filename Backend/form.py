@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import Profile_picture
 
 
 class Login_Input (UserCreationForm):
@@ -73,3 +74,21 @@ class Sign_in (forms.Form):
     'placeholder' : '********',
 
   }))
+
+
+class Form_category (forms.ModelForm):
+
+  class Meta:
+
+    model = Profile_picture
+    fields = ['Category_Type']
+
+    widgets = {
+
+      'Category_Type' : forms.TextInput(attrs={
+
+        'class' : 'form-control'
+
+      })
+
+    }

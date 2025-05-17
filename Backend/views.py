@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_list_or_404
 from .models import Login_IMG, Shopping_Object, Profile_picture, Category
-from .form import Login_Input, Sign_in
+from .form import Login_Input, Sign_in, Form_category
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -85,11 +85,13 @@ def Seller_account (request, id):
   current_user = request.user
   user = get_list_or_404 (User, id=id)
   user_profile = Profile_picture.objects.all()
+  Form_cata = Form_category (request.POST or None)
 
   context = {
     'user' : user,
     'IMG' : user_profile,
-    'current_user' :current_user
+    'current_user' :current_user,
+    'Form' : Form_cata
   }
 
   return render (request, 'Sell Part/Account/Seller_account.html', context=context)
