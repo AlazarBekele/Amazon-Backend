@@ -34,6 +34,7 @@ class Profile_picture (models.Model):
 
   user = models.OneToOneField (User, on_delete=models.CASCADE)
   Profile_IMG = models.ImageField (upload_to='Profile/', default='default.jpg')
+  Category_Type = models.ForeignKey (Category, on_delete=models.SET_NULL, blank=True, null=True)
 
   def __str__(self):
     return self.user.username
