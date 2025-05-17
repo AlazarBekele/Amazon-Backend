@@ -125,3 +125,7 @@
 .Second_container {
   width: 40%;
 }
+
+.Off_display_class {
+  display: none;
+}
