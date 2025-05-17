@@ -80,6 +80,7 @@ class Form_category (forms.ModelForm):
   class Meta:
 
     model = Profile_picture
+    
     fields = ['Category_Type']
 
     widgets = {

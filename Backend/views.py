@@ -91,7 +91,7 @@ def Seller_account (request, id):
 
     if Form_cata.is_valid ():
 
-      print ('Next')
+      Sell_object_container.save ()
 
   context = {
     'user' : user,
