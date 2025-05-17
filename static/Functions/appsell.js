@@ -1,9 +1,19 @@
 
     let Offdisplay = document.getElementById ('Off_dis')
+    let Input_container = document.getElementById ('input_first')
 
     function Click_Next () {
 
-        Offdisplay.classList.remove ('Discritpion')
-        Offdisplay.classList.add ('Off_display_class')
+        if (Input_container.textContent == '') {
+
+            window.alert ('Fill the Blank')
+
+        }
+        // } else {
+
+        //     Offdisplay.classList.remove ('Discritpion')
+        //     Offdisplay.classList.add ('Off_display_class')
+
+        // }
 
     }
