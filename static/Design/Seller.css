@@ -55,6 +55,8 @@
   max-width: 800px;
 }
 
+
+
 .Input_color {
   color: rgb(115, 115, 115);
 }
@@ -95,4 +97,21 @@
   padding: 10px 30px 10px 30px;
   border-radius: 8px;
   color: rgb(146, 146, 146);
+}
+
+.Next_container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.Discription_main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Second_price_container {
+  width: 100px;
 }
