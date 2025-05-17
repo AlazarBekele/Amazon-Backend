@@ -9,3 +9,5 @@ Add Star Counter between Star
 Add Profile
 
 When you click step Btn create class & display block
+
+Create Model To store seller objects that page lock page
