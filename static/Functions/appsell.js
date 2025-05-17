@@ -13,6 +13,17 @@
             Offdisplay.classList.remove ('Second_discription')
             Offdisplay.classList.add ('Off_display_class')
 
+            Second_category_select.classList.remove ('Second_Category')
+            Second_category_select.classList.add ('Popup')
+
         }
 
     }
+
+    let Second_category_select = document.getElementById ('Second_Category_id')
+
+    // function change_second () {
+
+    //     if (Second_category_select)
+
+    // }

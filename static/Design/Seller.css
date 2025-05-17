@@ -129,3 +129,11 @@
 .Off_display_class {
   display: none;
 }
+
+.Popup {
+  display: block;
+}
+
+.Second_Category {
+  display: none;
+}
