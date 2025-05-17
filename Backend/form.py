@@ -77,7 +77,6 @@ class Sign_in (forms.Form):
 
 
 class Form_category (forms.ModelForm):
-
   class Meta:
 
     model = Profile_picture
