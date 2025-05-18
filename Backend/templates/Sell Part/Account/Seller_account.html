@@ -124,7 +124,13 @@
     
                     <div class="Discription_main_container w-100">
     
-                        
+                        <form method="post">
+
+                            {% csrf_token %}
+                            
+                            {{ Sign.as_p }}
+
+                        </form>
     
                     </div>
 
