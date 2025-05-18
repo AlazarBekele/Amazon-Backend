@@ -132,6 +132,6 @@ class Sell_form (forms.ModelForm):
         'placeholder' : '$20.56 cent',
         'min' : '0'
 
-      }),
+      })
 
     }
