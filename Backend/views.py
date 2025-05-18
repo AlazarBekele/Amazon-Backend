@@ -96,9 +96,9 @@ def Seller_account (request, id):
 
   if request.method == 'POST':
 
-    if Sell_category.is_valid ():
+    if Sell_cate.is_valid ():
 
-      Sell_category.save ()
+      Sell_cate.save ()
 
   
 
@@ -106,7 +106,8 @@ def Seller_account (request, id):
     'user' : user,
     'IMG' : user_profile,
     'current_user' :current_user,
-    'Sign' : Sign_form
+    'Sign' : Sign_form,
+    'Category' : Sell_cate
   }
 
   return render (request, 'Sell Part/Account/Seller_account.html', context=context)
