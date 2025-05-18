@@ -85,13 +85,6 @@ def Seller_account (request, id):
   current_user = request.user
   user = get_list_or_404 (User, id=id)
   user_profile = Profile_picture.objects.all()
-  Form_cata = Form_category (request.POST or None)
-
-  if request.method == 'POST':
-
-    if Form_cata.is_valid ():
-
-      Sell_object_container.save ()
 
   context = {
     'user' : user,
