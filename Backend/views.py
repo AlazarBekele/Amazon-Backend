@@ -96,7 +96,7 @@ def Seller_account (request, id):
 
   if request.method == 'POST':
 
-    if Sell_category.is_valid ()
+    if Sell_category.is_valid ():
 
       Sell_category.save ()
 
