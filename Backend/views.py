@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_list_or_404
 from .models import Login_IMG, Shopping_Object, Profile_picture, Sell_object_container
-from .form import Login_Input, Sign_in, Form_category
+from .form import Login_Input, Sign_in
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User

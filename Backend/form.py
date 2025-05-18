@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Profile_picture
+from .models import Profile_picture, Sell_object_container
 
 
 class Login_Input (UserCreationForm):
@@ -92,3 +92,11 @@ class Form_category (forms.ModelForm):
       })
 
     }
+
+  
+class Sell_form (forms.ModelForm):
+
+  class Meta:
+
+    model = Sell_object_container
+    fields = ['Sell_Object_name', 'Sell_object_Discription', 'Sell_Object_Image', 'Sell_Object_price']
