@@ -89,8 +89,7 @@ def Seller_account (request, id):
   context = {
     'user' : user,
     'IMG' : user_profile,
-    'current_user' :current_user,
-    'Form' : Form_cata
+    'current_user' :current_user
   }
 
   return render (request, 'Sell Part/Account/Seller_account.html', context=context)
