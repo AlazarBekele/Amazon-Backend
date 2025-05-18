@@ -153,12 +153,9 @@
 
                         <form method="post">
 
-                            {% for Forms in Form %}
+                            {% csrf_token %}
 
-                                {% csrf_token %}
-                                {{ Forms.as_p }}
-
-                            {% endfor %}
+                            {{ Category.as_p }}
 
                         </form>
 

@@ -139,10 +139,9 @@ class Sell_category (forms.ModelForm):
 
     widgets = {
 
-      'Sell_Object_Image' : forms.TextInput(attrs={
+      'Sell_Object_Category' : forms.TextInput(attrs={
 
-        'class' : 'Second_price_container form-control ubuntu-light ps-3 pe-3',
-        'type' : 'file'
+        'class' : 'form-control ubuntu-light ps-3 pe-3'
 
       }),
 
