@@ -100,3 +100,22 @@ class Sell_form (forms.ModelForm):
 
     model = Sell_object_container
     fields = ['Sell_Object_name', 'Sell_object_Discription', 'Sell_Object_Image', 'Sell_Object_price']
+
+    widgets = {
+
+      'Sell_Object_name' : forms.TextInput(attrs={
+
+        'class' : 'Discritpion_input_title ubuntu-light ps-3 pe-3',
+        'id' : 'input_first',
+        'placeholder' : 'EX. Graphic card GIGABYTE GeForce RTX 3050,'
+
+      }),
+
+      'Sell_object_Discription' : forms.Textarea(attrs={
+
+        'class' : 'Discritpion_input_text ubuntu-light ps-3 pe-3 pt-3',
+        'placeholder' : 'EX. The NVIDIA RTX 3050 graphics card is a design equipped with 8GB of GDDR6 memory, supports PCI-E 4.0 and offers a number of unique technologies from NVIDIA to enhance the smoothness and high quality of generated graphics. At the same time, it provides support for Ray Tracing, allowing you to enjoy photorealistic graphics.'
+
+      }),      
+
+    }
