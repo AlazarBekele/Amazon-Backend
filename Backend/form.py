@@ -116,6 +116,22 @@ class Sell_form (forms.ModelForm):
         'class' : 'Discritpion_input_text ubuntu-light ps-3 pe-3 pt-3',
         'placeholder' : 'EX. The NVIDIA RTX 3050 graphics card is a design equipped with 8GB of GDDR6 memory, supports PCI-E 4.0 and offers a number of unique technologies from NVIDIA to enhance the smoothness and high quality of generated graphics. At the same time, it provides support for Ray Tracing, allowing you to enjoy photorealistic graphics.'
 
-      }),      
+      }),   
+
+      'Sell_Object_Image' : forms.ClearableFileInput(attrs={
+
+        'class' : 'Second_price_container form-control ubuntu-light ps-3 pe-3',
+        'type' : 'file'
+
+      }),
+  
+      'Sell_Object_price' : forms.IntegerField(attrs={
+
+        'class' : 'Second_price_container ubuntu-light ps-3 pe-3',
+        'type' : 'number',
+        'placeholder' : '$20.56 cent',
+        'min' : '0'
+
+      }),
 
     }
