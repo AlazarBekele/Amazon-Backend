@@ -99,7 +99,7 @@ class Sell_form (forms.ModelForm):
   class Meta:
 
     model = Sell_object_container
-    fields = ['Sell_Object_name', 'Sell_object_Discription', 'Sell_Object_Image', 'Sell_Object_price']
+    fields = ['Sell_Object_name', 'Sell_object_Discription', 'Sell_Object_price']
 
     widgets = {
 
@@ -116,13 +116,6 @@ class Sell_form (forms.ModelForm):
         'class' : 'Discritpion_input_text ubuntu-light ps-3 pe-3 pt-3',
         'placeholder' : 'EX. The NVIDIA RTX 3050 graphics card is a design equipped with 8GB of GDDR6 memory, supports PCI-E 4.0 and offers a number of unique technologies from NVIDIA to enhance the smoothness and high quality of generated graphics. At the same time, it provides support for Ray Tracing, allowing you to enjoy photorealistic graphics.'
 
-      }),   
-
-      'Sell_Object_Image' : forms.ClearableFileInput(attrs={
-
-        'class' : 'Second_price_container form-control ubuntu-light ps-3 pe-3',
-        'type' : 'file'
-
       }),
   
       'Sell_Object_price' : forms.NumberInput(attrs={
@@ -133,5 +126,24 @@ class Sell_form (forms.ModelForm):
         'min' : '0'
 
       })
+
+    }
+
+
+class Sell_category (forms.ModelForm):
+
+  class Meta:
+
+    model = Sell_object_container
+    fields = ['Sell_Object_Image']
+
+    widgets = {
+
+      'Sell_Object_Image' : forms.ClearableFileInput(attrs={
+
+        'class' : 'Second_price_container form-control ubuntu-light ps-3 pe-3',
+        'type' : 'file'
+
+      }),
 
     }
