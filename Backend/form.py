@@ -135,11 +135,11 @@ class Sell_category (forms.ModelForm):
   class Meta:
 
     model = Sell_object_container
-    fields = ['Sell_Object_Image']
+    fields = ['Sell_Object_Category']
 
     widgets = {
 
-      'Sell_Object_Image' : forms.ClearableFileInput(attrs={
+      'Sell_Object_Image' : forms.TextInput(attrs={
 
         'class' : 'Second_price_container form-control ubuntu-light ps-3 pe-3',
         'type' : 'file'
