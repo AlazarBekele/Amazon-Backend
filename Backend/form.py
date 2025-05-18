@@ -125,7 +125,7 @@ class Sell_form (forms.ModelForm):
 
       }),
   
-      'Sell_Object_price' : forms.IntegerField(attrs={
+      'Sell_Object_price' : forms.NumberInput(attrs={
 
         'class' : 'Second_price_container ubuntu-light ps-3 pe-3',
         'type' : 'number',
