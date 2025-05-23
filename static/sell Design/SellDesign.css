@@ -242,12 +242,11 @@
 }
 .defn-sell {
     background: #f1efe3f3;
-    max-width: 700%;
+    width: 700px;
     height: 300px;
     margin-top: 20px;
-    padding-top: 20px;
-    padding: 40px 20px;
     border-radius: 20px;
+    padding: 20px;
 }
 .defn-sell p {
     padding: 10px;
