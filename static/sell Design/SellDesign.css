@@ -293,20 +293,27 @@
 }
 .Chief-Executive-Officer {
     display: flex;
-    padding: 20px 4px;
+    padding: 20px;
 }
 .Chief-Executive-Officer h6{
     padding: 8px 15px;
     font-size: 17px;
 }
+
+.Founder_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Founder h5{
     padding: 0px 17px;
     font-size: 12px;
 }
 .Chief-Executive-Officer img {
     width: 50px;
-    height: auto;
-    border-radius: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 .Founder-link {
     padding-top: 10px;
@@ -364,8 +371,8 @@
 
 .there-acount .Chief-Executive-Officer img {
     width: 50px;
-    height: auto;
-    border-radius: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .there-acount .Founder-link {
