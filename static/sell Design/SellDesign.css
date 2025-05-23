@@ -262,8 +262,7 @@
 .main-create {
     background-color: #f6f6f68e;
     display: flex;
-    height: 810px;
-    margin-top: 10%;
+    height: 80vh;
     border-radius: 20px;
 }
 .one-seller {
