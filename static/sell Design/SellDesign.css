@@ -262,6 +262,8 @@
 .main-create {
     background-color: #f6f6f68e;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     height: 80vh;
     border-radius: 20px;
 }
@@ -270,6 +272,14 @@
 }
 .one-seller h3 {
     font-size: 70px;
+}
+
+.two-seller {
+    padding: 20px;
+}
+
+.one_seller_title {
+    width: 550px;
 }
 
 .two-seller img {
