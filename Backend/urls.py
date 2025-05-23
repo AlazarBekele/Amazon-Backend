@@ -13,8 +13,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path ('', index, name='index'),
-    path ('sell/', sell_index, name='sell'),
+    path ('home/', index, name='index'),
+    path ('', sell_index, name='sell'),
     path ('login/', login_here, name='login'),
     path ('signin/', SignForm, name='SignIn'),
     path ('gaming_accessories/', card_one, name='gaming_accessories'),
