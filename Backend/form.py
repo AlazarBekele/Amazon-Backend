@@ -136,13 +136,3 @@ class Sell_category (forms.ModelForm):
 
     model = Sell_object_container
     fields = ['Sell_Object_Category']
-
-    widgets = {
-
-      'Sell_Object_Category' : forms.TextInput(attrs={
-
-        'class' : 'form-control ubuntu-light ps-3 pe-3'
-
-      }),
-
-    }
