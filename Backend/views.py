@@ -19,7 +19,7 @@ def index (request):
 
   return render (request, 'index.html', context=context)
 
-@login_required (login_url='/login/')
+
 def sell_index (request):
 
   return render (request, 'Sell Part/Sell.html')
