@@ -276,6 +276,11 @@
 
 .two-seller {
     padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .one_seller_title {
