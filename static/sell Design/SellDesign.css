@@ -275,10 +275,7 @@
 .two-seller {
     background: #fff;
     width: 100%;
-    height: 360px;
-    margin: 40px 25px;
-    padding: 35px 50px;
-    padding-right: 10%;
+    height: 320px;
     border-radius: 17px;
 }
 .two-seller img {
@@ -293,6 +290,7 @@
 }
 .Chief-Executive-Officer {
     display: flex;
+    align-items: center;
     padding: 20px;
 }
 .Chief-Executive-Officer h6{
