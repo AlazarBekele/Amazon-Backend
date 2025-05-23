@@ -272,18 +272,15 @@
 .one-seller h3 {
     font-size: 70px;
 }
-.two-seller {
-    background: #fff;
-    width: 100%;
-    height: 320px;
-    border-radius: 17px;
-}
+
 .two-seller img {
     width: 150px;
     height: auto;
 }
 .two-account {
-    padding-top: 28px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
 }
 .two-account h6 {
     font-size: 20px;
