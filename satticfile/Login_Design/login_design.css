@@ -1,0 +1,73 @@
+
+body {
+  overflow: hidden;
+}
+
+.Main_login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form_container {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 20px;
+}
+
+.control {
+  border: 1px solid #C4C4C4;
+  border-radius: 12px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.Form_Btn {
+  background-color: #EA454C;
+  border: none;
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.Form_container_sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  row-gap: 20px;
+}
+
+.control_sign {
+  border: 1px solid #C4C4C4;
+  border-radius: 12px;
+  width: 400px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.15);
+}
+
+.link_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_Arrow {
+  width: 30px;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+}

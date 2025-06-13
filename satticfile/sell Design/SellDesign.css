@@ -75,18 +75,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.sell-content {
+.sell_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-right: 10px;
+    height: 40px;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.sell-content h2,
-.sell-content p,
-.sell-content button {
+.sell_content h2,
+.sell_content p,
+.sell_content button {
     margin: 0;
 }
 
@@ -123,8 +123,7 @@
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    width: 8%;  
-    max-width: 200px;
+    width: 150px;
     height: 45px;
     outline: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -132,22 +131,50 @@
     margin-right: 50px;
 }
 
+#signup-btn-bottom {
+    background: rgb(255, 102, 0);
+    border: none;
+    border-radius: 50px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+#signup-btn-bottom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
 .sell button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.amazon-seller {
+.Hero_banner_sell {
     display: flex;
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 55px;
-    margin-top: 90px;
-    height: 60vh;
-    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.amazon-seller img {
+.amazon_seller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.amazon_seller img {
     width: 500px; 
     height: auto;
     border-radius: 8px;
@@ -165,7 +192,7 @@
 .main-signup p:hover {
     transform: translateY(-3px);
 }
-.main-signup button {
+.main-signup a {
     font-size: 20px;
     width: 188px;
     height: 75px;
@@ -215,12 +242,11 @@
 }
 .defn-sell {
     background: #f1efe3f3;
-    max-width: 700%;
+    width: 700px;
     height: 300px;
     margin-top: 20px;
-    padding-top: 20px;
-    padding: 40px 20px;
     border-radius: 20px;
+    padding: 20px;
 }
 .defn-sell p {
     padding: 10px;
@@ -236,9 +262,11 @@
 .main-create {
     background-color: #f6f6f68e;
     display: flex;
-    height: 810px;
-    margin-top: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
     border-radius: 20px;
+    margin-top: 30px;
 }
 .one-seller {
     padding: 65px 50px;
@@ -246,41 +274,56 @@
 .one-seller h3 {
     font-size: 70px;
 }
+
 .two-seller {
-    background: #fff;
-    width: 100%;
-    height: 360px;
-    margin: 40px 25px;
-    padding: 35px 50px;
-    padding-right: 10%;
-    border-radius: 17px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
 }
+
+.one_seller_title {
+    width: 550px;
+}
+
 .two-seller img {
     width: 150px;
     height: auto;
 }
 .two-account {
-    padding-top: 28px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
 }
 .two-account h6 {
     font-size: 20px;
 }
 .Chief-Executive-Officer {
     display: flex;
-    padding: 20px 4px;
+    align-items: center;
+    padding: 20px;
 }
 .Chief-Executive-Officer h6{
     padding: 8px 15px;
     font-size: 17px;
 }
+
+.Founder_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Founder h5{
     padding: 0px 17px;
     font-size: 12px;
 }
 .Chief-Executive-Officer img {
     width: 50px;
-    height: auto;
-    border-radius: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 .Founder-link {
     padding-top: 10px;
@@ -338,8 +381,8 @@
 
 .there-acount .Chief-Executive-Officer img {
     width: 50px;
-    height: auto;
-    border-radius: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .there-acount .Founder-link {

@@ -630,6 +630,7 @@
     border: 1px solid rgb(231, 231, 231);
     gap: 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .Rate_container {
@@ -656,11 +657,13 @@
 }
 
 .Object_btn {
-    border: 1px solid gray;
-    background-color: white;
+    border: none;
+    background-color: rgb(230, 208, 97);
     padding: 4px 8px 4px 8px;
     border-radius: 30px;
     margin: 0;
+    width: 150px;
+    color: white;
 }
 
 
@@ -743,4 +746,22 @@
     padding: 4px 8px 4px 8px;
     border-radius: 30px;
     margin: 0;
+}
+
+
+/* 
+
+
+
+*/
+
+.AddToCartBtn {
+    width: 30px;
+    padding-left: 10px;
+}
+
+.main_rate_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
